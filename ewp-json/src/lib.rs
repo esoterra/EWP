@@ -2,7 +2,7 @@
 mod json_tokenize;
 mod json_parse;
 
-wit_bindgen_rust::export!("../interfaces/parser1.wit");
+wit_bindgen_rust::export!("../parser1.wit");
 
 struct Parser1 {}
 
