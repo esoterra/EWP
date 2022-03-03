@@ -1,0 +1,26 @@
+record token {
+    label: string,
+    span: span
+}
+
+record span {
+    offset: u32,
+    length: u32,
+}
+
+record branch {
+    label: string,
+    children: list<node-index>
+}
+
+variant node-index {
+    token(u32),
+    branch(u32),
+}
+
+record output {
+    tokens: list<token>,
+    tree: list<branch>
+}
+
+parse: function(input: string) -> output
