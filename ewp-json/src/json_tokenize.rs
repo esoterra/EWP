@@ -1,3 +1,7 @@
+// NOTE: This tokenizer contains known deviations from JSON standard.
+// These exist so that trees can be generated for nearly valid input
+// as well as to simplify the logic for parsing.
+// As such it is intended to accept all valid inputs, but not reject all invalid ones.
 use super::parser1;
 
 use std::str::CharIndices;
