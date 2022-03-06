@@ -1,0 +1,1 @@
+parse: function(input: string) -> output

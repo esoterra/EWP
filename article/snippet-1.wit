@@ -1,9 +1,1 @@
-record token {
-  label: string,
-  span: span
-}
-
-record span {
-  offset: u32, // The byte index where the token starts
-  length: u32, // The number of bytes long the token is
-}
+parse: function(input: string) -> string

@@ -1,0 +1,15 @@
+record branch {
+  label: string,
+  // The nodes that this branch contains
+  children: list<node-index>
+}
+
+variant node-index {
+  token(u32),  // refers to the Nth token in output
+  branch(u32), // refers to the Nth branch in output
+}
+
+record output {
+  tokens: list<token>,
+  tree: list<branch>
+}
