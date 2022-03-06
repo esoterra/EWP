@@ -1,0 +1,9 @@
+[package]
+name = "tree-ewp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmtime = "0.33.0"
+wit-bindgen-wasmtime = { ... }
+...

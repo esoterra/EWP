@@ -1,0 +1,10 @@
+$ cargo run -- ../ewp_json.wasm ../test.json
+(Object
+    (LBrace)
+    (Entry
+        (String)
+        (Colon)
+        (Number)
+    )
+    (RBrace)
+)
